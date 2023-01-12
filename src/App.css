@@ -17,6 +17,14 @@
 
   --header-image: 10vw;
 
+  --password-container-p: 2vw;
+
+  --password-fs: 2rem;
+  --password-fw: 600;
+
+  --input-interface-w: 75vw;
+  --input-nterface-p: 2vw;
+
   --color-1: rgba(2, 1, 18, 1);
   --color-2: rgba(255, 255, 255, 1);
   --color-3: rgba(50, 50, 50, 1);
@@ -45,6 +53,45 @@ body {
   vertical-align: middle;
 }
 
+.password-container {
+  text-align: center;
+  padding: var(--password-container-p);
+}
+
+.password {
+  font-size: var(--password-fs);
+  font-weight: var(--password-fw);
+  color: var(--color-2);
+  word-wrap: break-word;
+}
+
+.input-interface {
+  width: var(--input-interface-w);
+  margin: auto;
+  padding: var(--input-nterface-p);
+}
+
+.input-interface input {
+  padding: var(--input-nterface-p);
+  width: 100%;
+  text-align: center;
+}
+
+.generate-button {
+  padding: var(--input-nterface-p);
+  width: fit-content;
+  border: 2px solid white;
+  margin: auto;
+  border-radius: 2px;
+  color: white;
+}
+
+.generate-button:hover {
+  border: 2px solid blue;
+  color: blue;
+  cursor: pointer;
+}
+
 /* 
 ##################
 # TOUCH DISPLAYS #
@@ -58,6 +105,14 @@ body {
     --header-fw: 600;
 
     --header-image: 5vw;
+
+    --password-container-p: 2vw;
+
+    --password-fs: 2rem;
+    --password-fw: 600;
+
+    --input-interface-w: 50vw;
+    --input-nterface-p: 1vw;
 
     --color-1: rgba(2, 1, 18, 1);
     --color-2: rgba(255, 255, 255, 1);

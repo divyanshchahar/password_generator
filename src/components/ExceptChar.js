@@ -4,15 +4,17 @@ function ExceptChar({ stateFunc }) {
   const [localStatae, setLocalState] = useState();
 
   return (
-    <input
-      type="text"
-      value={localStatae}
-      onChange={(e) => {
-        setLocalState(e.target.value);
-        stateFunc(e.target.value);
-      }}
-      placeholder="All characters except"
-    />
+    <div className="input-interface">
+      <input
+        type="text"
+        value={localStatae}
+        onChange={(e) => {
+          setLocalState(e.target.value);
+          stateFunc(e.target.value);
+        }}
+        placeholder="All characters except"
+      />
+    </div>
   );
 }
 
