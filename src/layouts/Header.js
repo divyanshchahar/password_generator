@@ -15,13 +15,6 @@ function Header() {
       >
         <img className="header-image" src={github} alt="" />
       </a>
-
-      {/* <img
-        className="header-image"
-        src={github}
-        alt=""
-        href="https://github.com/divyanshchahar/password_generator"
-      /> */}
     </div>
   );
 }
