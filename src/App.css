@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+###################
+# MOBILE DISPLAYS #
+###################
+ */
+
+:root {
+  --header-p: 2vw;
+  --header-fs: 1.5rem;
+  --header-fw: 600;
+
+  --header-image: 10vw;
+
+  --color-1: rgba(2, 1, 18, 1);
+  --color-2: rgba(255, 255, 255, 1);
+  --color-3: rgba(50, 50, 50, 1);
+}
+
+body {
+  background-color: var(--color-3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--header-p);
+  background-color: var(--color-1);
+  color: var(--color-2);
+  font-size: var(--header-fs);
+  font-weight: var(--header-fw);
+}
+
+.header-image {
+  height: var(--header-image);
+}
+
+.header a img {
+  vertical-align: middle;
+}
+
+/* 
+##################
+# TOUCH DISPLAYS #
+################## 
+*/
+
+@media screen and (min-width: 429px) {
+  :root {
+    --header-p: 1vw;
+    --header-fs: 3rem;
+    --header-fw: 600;
+
+    --header-image: 5vw;
+
+    --color-1: rgba(2, 1, 18, 1);
+    --color-2: rgba(255, 255, 255, 1);
+  }
+}
