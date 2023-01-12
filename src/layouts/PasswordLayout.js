@@ -3,7 +3,7 @@ import ExceptChar from "../components/ExceptChar";
 import NumberOfChar from "../components/NumberOfChar";
 
 function PasswordLayout() {
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState("No Password Generated");
   const [charCount, setCharCount] = useState();
   const [exceptChar, setExceptChar] = useState();
 
