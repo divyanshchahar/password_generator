@@ -1,16 +1,17 @@
 import { useState } from "react";
 
-function NumberOfChar(stateFunc) {
-  const [charCount, setCharCount] = useState();
+function NumberOfChar({ stateFunc }) {
+  const [localStatae, setLocalState] = useState();
 
   return (
     <input
       type="number"
-      value={charCount}
+      value={localStatae}
       min="2"
       max="90"
       onChange={(e) => {
-        setCharCount(e.target.value);
+        setLocalState(e.target.value);
+        stateFunc(e.target.value);
       }}
       placeholder="2-90"
     />
