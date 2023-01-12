@@ -8,10 +8,11 @@ function PasswordLayout() {
   const [exceptChar, setExceptChar] = useState();
 
   return (
-    <div>
-      <p>{password}</p>
+    <div className="password-container">
+      <p className="password">{password}</p>
       <NumberOfChar stateFunc={setCharCount} />
       <ExceptChar stateFunc={setExceptChar} />
+      <div className="generate-button"> Generate Password</div>
     </div>
   );
 }
